@@ -7,10 +7,10 @@ def pfByN(op1, op2):
 
     while multi:
         pow_i = 1
-        while multi >= op1<<pow_i:
+        while multi >= op1 << pow_i:
             pow_i += 1
         pow_i -= 1
-        multi -= op1<<pow_i
+        multi -= op1 << pow_i
         list_op.append(pow_i)
 
     return list_op
