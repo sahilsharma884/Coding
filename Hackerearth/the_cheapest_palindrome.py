@@ -1,3 +1,6 @@
+# Problem Link
+# https://www.hackerearth.com/practice/algorithms/string-algorithm/basics-of-string-manipulation/practice-problems/algorithm/make-the-cheapest-palindrome-1/
+
 def checkPalindrome(S, mid):
     fS = S[:mid]
     sS = S[-1:-(mid + 1):-1]
