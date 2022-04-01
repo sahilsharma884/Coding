@@ -17,12 +17,13 @@ def pfByN(op1, op2):
 
 
 if __name__ == '__main__':
-    N = 5
-    M = 21
-    result = ''
-    list_op = pfByN(N, M)
-    for op1 in range(len(list_op)):
-        result += f'({N}<<{list_op[op1]})'
-        if len(list_op) != op1 + 1:
-            result += ' + '
-    print(result)
+    T = int(input())
+    for t in range(T):
+        N, M = list(map(int, input().split(' ')))
+        result = ''
+        list_op = pfByN(N, M)
+        for op1 in range(len(list_op)):
+            result += f'({N}<<{list_op[op1]})'
+            if len(list_op) != op1 + 1:
+                result += ' + '
+        print(result)
