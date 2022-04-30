@@ -16,7 +16,7 @@ def Insertion_sort(A):
     loop 'j', summation(t[j]) becomes (1+2+3+....n) = (n-1) times. And summation(t[j]-1) => summation(1-1) = 0, so c6 and c7 cancelled out.
 
     T(n) = c1.n + c2.(n-1) + c4.(n-1) + c5.(n-1) + c8.(n-1)
-    T(n) = (c1 + c2 + c4 + c5 + c8).n - (c2 + c4 + c5 + c8) = a.n + b = O(n)
+    T(n) = (c1 + c2 + c4 + c5 + c8).n - (c2 + c4 + c5 + c8) = a.n - b = O(n)
 
     Worst case appear when A is sorted in reverse order, in this case, while loop has to compare with key from elements A(j-1 to 0).
     So, t[j] = j for j=1...n
